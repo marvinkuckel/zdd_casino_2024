@@ -2,6 +2,8 @@ name: First Python CI
 on:
   push:
     branches: ['main']
+  workflow_dispatch:
+    
 jobs:
   basic-test:
     runs-on: windows-latest
