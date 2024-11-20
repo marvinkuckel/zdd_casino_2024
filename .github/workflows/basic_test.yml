@@ -1,0 +1,13 @@
+name: First Python CI
+on:
+  push:
+    branches: ['main']
+jobs:
+  basic-test:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: setup python
+      uses: actions/setup-python@v3
+      with: 
+        python-version: 3.12
